@@ -1,5 +1,5 @@
 #!name=一刻相册去广告
-#!desc=
+#!desc= 去掉首页广告，轮播图
 #!author = Hour
 
 [MITM]
