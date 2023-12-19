@@ -1,5 +1,5 @@
 #!name = 中国移动
-#!desc = 去广告
+#!desc = 去广告,多个悬浮窗 
 #!date = 2023-12-19
 #!icon = https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/0f/89/79/0f89793e-ade0-a062-e594-5c9d2d9821f4/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/460x0w.webp
 #!author = Hour
@@ -12,3 +12,5 @@ hostname = *.app.10086.cn
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit reject-200
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/explorePage\/getAdverList reject
 ^https:\/\/(client\.app\.coc|h\.app\.coc|app)\.10086\.cn\/biz-orange\/DN\/emotionMarket reject
+# 多个悬浮窗 
+^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(emotionMarket|explorePage\/getAdverList|init\/startInit) reject
