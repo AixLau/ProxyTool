@@ -1,0 +1,16 @@
+#!name=一刻相册去广告
+#!desc=
+#!author = Hour
+
+[MITM]
+
+hostname = %APPEND% pan.baidu.com
+
+[URL Rewrite]
+
+
+^https:\/\/pan\.baidu\.com\/act\/api\/conf.+ reject-dict
+
+^https:\/\/pan\.baidu\.com\/youai\/miner\/v2\/picrecommend reject-dict
+
+^https:\/\/pan\.baidu\.com\/youai\/material\/v1\/getbynavid\?app_id.+ reject-dict
