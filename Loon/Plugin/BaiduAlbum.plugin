@@ -1,5 +1,7 @@
 #!name=一刻相册去广告
 #!desc= 去掉首页广告，轮播图
+#!date = 2023-12-19
+#!icon= https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/88/a2/1c/88a21ccd-eef1-3544-8c3f-b68b3e89796b/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp
 #!author = Hour
 
 [MITM]
