@@ -1,0 +1,14 @@
+#!name = 大学搜题酱
+#!desc = 去掉首页横幅广告，我的页面横幅广告
+#!date = 2023-12-20
+#!icon = https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/f6/9c/49/f69c4986-fc97-1360-ca73-6b6e1d68db19/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/492x0w.webp
+#!author = Hour
+#!homepage = https://github.com/AixLau/ProxyTool/tree/main/Loon/Plugin
+
+[MITM]
+hostname =  www.daxuesoutijiang.com
+
+[Script]
+http-response ^https://www.daxuesoutijiang.com/capi/user/mine script-path=https://raw.githubusercontent.com/AixLau/ProxyTool/main/Loon/Scrpit/daxuesoutijiang.js, requires-body=true, tag=我的页面
+http-response ^https://www.daxuesoutijiang.com/init/config/searchtree script-path=https://raw.githubusercontent.com/AixLau/ProxyTool/main/Loon/Scrpit/daxuesoutijiang.js, requires-body=true, timeout=60, tag=首页
+
