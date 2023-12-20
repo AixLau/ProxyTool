@@ -9,6 +9,6 @@
 hostname = sh-gateway.shihuo.cn
 
 [Script]
-http-response ^https:\/\/sh-gateway\.shihuo\.cn\/v4\/services\/sh-appapi\/my\/config_list\?platform script-path=https://raw.githubusercontent.com/AixLau/ProxyTool/972e7af659895541fd39631db7e9422380130670/Loon/Script/shihuo.js,  tag=识货简化工具栏
-http-response ^https:\/\/sh-gateway\.shihuo\.cn\/v4\/services\/sh-appapi\/my\/info\?platform script-path=https://raw.githubusercontent.com/AixLau/ProxyTool/972e7af659895541fd39631db7e9422380130670/Loon/Script/shihuo.js,  tag=识货去掉背景和省钱卡
+http-response ^https:\/\/sh-gateway\.shihuo\.cn\/v4\/services\/sh-appapi\/my\/config_list\?platform script-path=https://raw.githubusercontent.com/AixLau/ProxyTool/972e7af659895541fd39631db7e9422380130670/Loon/Script/shihuo.js, , requires-body=true,  tag=识货简化工具栏
+http-response ^https:\/\/sh-gateway\.shihuo\.cn\/v4\/services\/sh-appapi\/my\/info\?platform script-path=https://raw.githubusercontent.com/AixLau/ProxyTool/972e7af659895541fd39631db7e9422380130670/Loon/Script/shihuo.js, , requires-body=true, tag=识货去掉背景和省钱卡
 
