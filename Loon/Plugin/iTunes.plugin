@@ -1,0 +1,12 @@
+#!name = iTunes
+#!desc = 解锁系列
+#!date = 2024-1-1
+#!icon = 
+#!author = Hour
+#!homepage = https://github.com/AixLau/ProxyTool/tree/main/Loon/Plugin
+
+[MITM]
+hostname = buy.itunes.apple.com
+
+[Script]
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=ch.js, requires-body=true, timeout=10, tag=buy
