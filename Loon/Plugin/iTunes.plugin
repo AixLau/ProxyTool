@@ -9,5 +9,4 @@
 hostname = buy.itunes.apple.com
 
 [Script]
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=
-https://raw.githubusercontent.com/AixLau/ProxyTool/main/Loon/Script/iTunes.js, requires-body=true, timeout=10, tag=buy
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/AixLau/ProxyTool/main/Loon/Script/iTunes.js, requires-body=true, timeout=10, tag=buy
