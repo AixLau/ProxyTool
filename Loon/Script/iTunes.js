@@ -1,1 +1,73 @@
-;var encode_version = 'jsjiami.com.v5', iezgl = '__0x10c41b',  __0x10c41b=['wrk+YMObw5M=','w5bCpU5nLsOTBg==','ZsK7w7jDu3zCi8OYw4pywpnCsMKlSATCtlNlw4cSwqIzKsO3w7I=','wpkEw7rDtsOmH3k=','w7R/w60rwqTDsMOe','H0rCg8OnYcKlw4Y5w5rCihBsSMOqw7wFFwULJcK4wqPCtcKKTcOOblU=','w4HDrsOZUMKVOHw=','w7w2VcOeAQ==','wqY9ZMOSwpzDpxB4wqLCuVR8w4FRC8K7w7zDvy7Cj8KfYFw7JUXDlQ==','w7zCvcKQW8OT','ZsK7w7jDu3jCgsOEw59FwpXCvcKnX0bCrlVrwoVRwqAoLcOsw7QQwoVWw7xOw5RKw7LCi8OcP2Njw6bCgw==','M8KSIsOIVA==','w7t6M8KZwoHCuQ==','wp3DqcOKTwIkw45a','wqjCv8KYw4XCnA==','CsOqwr9DScKXMsKiQcKYdCLDi1AwNnrCt8Kzw6TCiBc=','IsKjMMKswro=','RcKHWRTCii0Nwp5rJcOBw5cpw7bDksOzEkRwwrXDnsOFw5Vcwq3CgcKIw4lvw7c6PA==','asKgZxhYwoA=','bz7DmABn','w5TCk1HDtBvCoMKYw6jDt8OWYMKSGMOEMHdQccKswoEHNMKlwqRWLX/Ciw==','wqvDkQPDosOL','woQ7ZQ==','w6M0wrjDuTxvwrjDlE3DkMOmAjlUw4IVw6HCoil6w4/DksK2ax0PwpBBHS43w47Ct8OObsK2w7A/V0bCj2vDnW90wrQzw4xpM8Ol','fHvCsWzDpw==','wp1UUEZzcwYlw6o=','DRBrHcOFwpzCicOQw6HDpQzCsip5JQEuw5LDhMKHa2zCllU4TsKSwoXDvcKkdcO5wqM3wrDCoETCigvDmWsAw7Zrwp/Du8O7wqzDkcOGw6XDtsOEwrfDjG3Dmw==','wofDp2MfccOqwqrDhQ==','wp3DrsOfDAJkwo9HwrfCgm3CpMK1M8OMYGsUaMKaWsKNw47Cs3vDtTTCvVlS','BsOJIGF9','w43CtMKL','wpPDrh4hMMKQXsOrw4xgw5t0WSbCuQR3axMHIsKZwrM=','wo3Dq8OQTlI=','ZC7DkAk3wqnDiUY=','wrpOE8K6ZQvDgDYXwrjDuDFvPETCrcKhw5Ifw64/w744','wrHDj8Oq','w4sfF0YmPEZ5wrHClcOELcObw6FoE8Kuw4rCqxZuEsOTb35ZwoHCoVNnw4RVEVs5SFE=','RMKNeiMuOjo=','wqY+wrArw63Cu8KBw7llw5Nxw7cl
+// Loon http-response脚本，用于完全替换JSON响应体内容
+
+// 解析原始响应体
+let response = JSON.parse($response.body);
+
+// 定义新的响应体
+response = {
+  "status": 0,
+  "receipt": {
+    "app_item_id": 1534704608,
+    "receipt_creation_date": "2023-09-09 16:06:26 Etc/GMT",
+    "receipt_type": "Production",
+    "bundle_id": "com.zerone.hidesktop",
+    "original_purchase_date": "2023-09-09 16:00:00 Etc/GMT",
+    "in_app": [
+      {
+        "quantity": "1",
+        "purchase_date_ms": "1694250549000",
+        "transaction_id": "490001314520000",
+        "is_trial_period": "false",
+        "original_transaction_id": "490001314520000",
+        "original_purchase_date_pst": "2023-09-09 02:09:10 America/Los_Angeles",
+        "product_id": "com.zerone.hidesktop.forever",
+        "in_app_ownership_type": "PURCHASED",
+        "purchase_date": "2023-09-09 09:09:09 Etc/GMT",
+        "original_purchase_date_ms": "1694250550000",
+        "purchase_date_pst": "2023-09-09 02:09:09 America/Los_Angeles",
+        "original_purchase_date": "2023-09-09 09:09:10 Etc/GMT"
+      }
+    ],
+    "adam_id": 1534704608,
+    "receipt_creation_date_pst": "2023-09-09 06:06:26 America/Los_Angeles",
+    "request_date": "2023-09-09 16:06:27 Etc/GMT",
+    "request_date_pst": "2023-09-09 06:06:27 America/Los_Angeles",
+    "version_external_identifier": 862531073,
+    "request_date_ms": "1694273635000",
+    "original_purchase_date_pst": "2023-09-09 06:00:00 America/Los_Angeles",
+    "application_version": "16",
+    "original_purchase_date_ms": "1694273430000",
+    "receipt_creation_date_ms": "1694273634000",
+    "original_application_version": "4",
+    "download_id": 503087301606683970
+  },
+  "latest_receipt_info": [
+    {
+      "quantity": "1",
+      "purchase_date_ms": "1694250549000",
+      "transaction_id": "490001314520000",
+      "is_trial_period": "false",
+      "original_transaction_id": "490001314520000",
+      "original_purchase_date_pst": "2023-09-09 02:09:10 America/Los_Angeles",
+      "product_id": "com.zerone.hidesktop.forever",
+      "in_app_ownership_type": "PURCHASED",
+      "purchase_date": "2023-09-09 09:09:09 Etc/GMT",
+      "original_purchase_date_ms": "1694250550000",
+      "purchase_date_pst": "2023-09-09 02:09:09 America/Los_Angeles",
+      "original_purchase_date": "2023-09-09 09:09:10 Etc/GMT"
+    }
+  ],
+  "latest_receipt": "hour",
+  "environment": "Production",
+  "pending_renewal_info": [
+    {
+      "product_id": "com.zerone.hidesktop.forever",
+      "original_transaction_id": "490001314520000",
+      "auto_renew_product_id": "com.zerone.hidesktop.forever",
+      "auto_renew_status": "1"
+    }
+  ]
+};
+
+// 返回新的响应体
+$done({ body: JSON.stringify(response) });
