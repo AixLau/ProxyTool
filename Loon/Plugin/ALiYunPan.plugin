@@ -9,4 +9,4 @@
 hostname = *.aliyundrive.com, *.alipan.com
 
 [Script]
-http-response ^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js, requires-body=true, tag=阿里网盘
+http-response ^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) script-path=https://raw.githubusercontent.com/AixLau/ProxyTool/main/Loon/Script/alidrive.js, requires-body=true, tag=阿里网盘
